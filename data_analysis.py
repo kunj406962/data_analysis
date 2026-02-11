@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 print("Starting data analysis...")
 
 # Load the dataset
-df = pd.read_csv("All_Diets.csv")
+df = pd.read_csv("res/csv/All_Diets.csv")
 
 print("Dataset loaded successfully")
 print("Dataset shape:", df.shape)
@@ -49,8 +49,8 @@ print("Derived metrics added")
 # -------------------------
 # Save outputs (useful for Docker / serverless tasks)
 # -------------------------
-avg_macros.to_csv("avg_macros.csv")
-top_protein.to_csv("top_protein.csv")
+avg_macros.to_csv("res/csv/avg_macros.csv")
+top_protein.to_csv("res/csv/top_protein.csv")
 
 print("Output files saved")
 
@@ -62,24 +62,28 @@ print("Output files saved")
 sns.barplot(x=avg_macros.index, y=avg_macros["Protein(g)"])
 plt.title("Average Protein by Diet Type")
 plt.ylabel("Average Protein (g)")
+plt.savefig("res/png/protein_chart.png")
 plt.show()
 
 # Carbs bar chart
 sns.barplot(x=avg_macros.index, y=avg_macros["Carbs(g)"])
 plt.title("Average Carbs by Diet Type")
 plt.ylabel("Average Carbs (g)")
+plt.savefig("res/png/carbs_chart.png")
 plt.show()
 
 # Fat bar chart
 sns.barplot(x=avg_macros.index, y=avg_macros["Fat(g)"])
 plt.title("Average Fat by Diet Type")
 plt.ylabel("Average Fat (g)")
+plt.savefig("res/png/fat_chart.png")
 plt.show()
 
 # Heatmap
 sns.heatmap(avg_macros, annot=True, cmap="YlGnBu")
 plt.title("Macronutrient Content by Diet Type")
 plt.xlabel("Macronutrients")
+plt.savefig("res/png/heatmap.png")
 plt.show()
 
 # Scatter plot
@@ -94,6 +98,7 @@ plt.title("Top 5 Protein-Rich Recipes by Diet Type")
 plt.ylabel("Protein (g)")
 plt.xlabel("Recipe Index")
 plt.legend(title="Diet Type")
+plt.savefig("res/png/scatter_plot.png")
 plt.show()
 
 print("Data analysis complete.")
