@@ -1,0 +1,6 @@
+version: '3.8'
+
+services:
+  diet-analysis:
+    image: pkunjj/diet-analysis
+    container_name: diet-analysis-container
