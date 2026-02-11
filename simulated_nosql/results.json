@@ -1,0 +1,187 @@
+{
+  "processing_timestamp": "2026-02-11T16:16:16.414398",
+  "total_recipes_processed": 7806,
+  "diet_types_analyzed": 5,
+  "average_macronutrients_by_diet": [
+    {
+      "Diet_type": "dash",
+      "Protein(g)": 69.28227507163324,
+      "Carbs(g)": 160.5357535816619,
+      "Fat(g)": 101.15056160458454
+    },
+    {
+      "Diet_type": "keto",
+      "Protein(g)": 101.26650793650794,
+      "Carbs(g)": 57.970575396825396,
+      "Fat(g)": 153.1163558201058
+    },
+    {
+      "Diet_type": "mediterranean",
+      "Protein(g)": 101.11231602966345,
+      "Carbs(g)": 152.9055447803765,
+      "Fat(g)": 101.41613804905874
+    },
+    {
+      "Diet_type": "paleo",
+      "Protein(g)": 88.67476452119308,
+      "Carbs(g)": 129.55212715855572,
+      "Fat(g)": 135.66902668759812
+    },
+    {
+      "Diet_type": "vegan",
+      "Protein(g)": 56.15703022339028,
+      "Carbs(g)": 254.00419185282524,
+      "Fat(g)": 103.29967805519053
+    }
+  ],
+  "top_protein_recipes_by_diet": {
+    "paleo": [
+      {
+        "Recipe_name": "Swiss Paleo\u2019s Homemade Italian & Chorizo Sausage",
+        "Protein(g)": 1273.61
+      },
+      {
+        "Recipe_name": "Turkey Soup",
+        "Protein(g)": 1142.58
+      },
+      {
+        "Recipe_name": "Orange and Five-Spice Roasted Chicken Legs | Keto, Paleo",
+        "Protein(g)": 677.22
+      },
+      {
+        "Recipe_name": "Vietnamese Pho Pressure Cooker (Noodle Soup)",
+        "Protein(g)": 602.91
+      },
+      {
+        "Recipe_name": "Paleo Slow Cooker Honey Garlic Chicken and Vegetables recipes",
+        "Protein(g)": 501.65
+      }
+    ],
+    "vegan": [
+      {
+        "Recipe_name": "Tangy Teriyaki Salmon",
+        "Protein(g)": 431.1
+      },
+      {
+        "Recipe_name": "Mini nut roasts with candied carrots",
+        "Protein(g)": 421.72
+      },
+      {
+        "Recipe_name": "Vegan Pinto Bean Chili",
+        "Protein(g)": 381.55
+      },
+      {
+        "Recipe_name": "Vegan Chili and Cornbread Casserole",
+        "Protein(g)": 319.54
+      },
+      {
+        "Recipe_name": "Kentucky fried seitan",
+        "Protein(g)": 317.43
+      }
+    ],
+    "keto": [
+      {
+        "Recipe_name": "Sara Louise's Keto Smoked Holiday Turkey",
+        "Protein(g)": 1092.0
+      },
+      {
+        "Recipe_name": "Mayo Free Deviled Eggs (Paleo, Whole30 + Keto)",
+        "Protein(g)": 766.99
+      },
+      {
+        "Recipe_name": "Low Carb Beef and Cheddar Cauliflower Bake, THM S meal, Keto too",
+        "Protein(g)": 710.81
+      },
+      {
+        "Recipe_name": "Orange and Five-Spice Roasted Chicken Legs | Keto, Paleo",
+        "Protein(g)": 677.22
+      },
+      {
+        "Recipe_name": "Low Carb Salmon Cakes (Keto, Grain Free)",
+        "Protein(g)": 656.95
+      }
+    ],
+    "mediterranean": [
+      {
+        "Recipe_name": "Fava Bean Salad with Mountain Ham and Mint",
+        "Protein(g)": 970.31
+      },
+      {
+        "Recipe_name": "Poached Salt Cod with Vegetables and Garlic Mayonnaise",
+        "Protein(g)": 656.65
+      },
+      {
+        "Recipe_name": "Mediterranean Pizza",
+        "Protein(g)": 628.29
+      },
+      {
+        "Recipe_name": "Orange and Cumin Leg of Lamb with Roasted Tomatoes and Garlic Recipe",
+        "Protein(g)": 607.03
+      },
+      {
+        "Recipe_name": "Meatballs Braised with Kale",
+        "Protein(g)": 531.48
+      }
+    ],
+    "dash": [
+      {
+        "Recipe_name": "Salmon Mousse",
+        "Protein(g)": 1239.47
+      },
+      {
+        "Recipe_name": "Homemade Turkey Alphabet Soup",
+        "Protein(g)": 1190.35
+      },
+      {
+        "Recipe_name": "Barbecue Chicken Legs",
+        "Protein(g)": 1017.25
+      },
+      {
+        "Recipe_name": "12th Man Hot Wings",
+        "Protein(g)": 807.03
+      },
+      {
+        "Recipe_name": "Jazzed Up Turkey Tetrazzini",
+        "Protein(g)": 517.47
+      }
+    ]
+  },
+  "highest_protein_diet": {
+    "diet_type": "keto",
+    "average_protein_g": 101.26650793650794
+  },
+  "common_cuisines_by_diet": {
+    "paleo": {
+      "american": 535,
+      "italian": 171,
+      "french": 154
+    },
+    "vegan": {
+      "american": 925,
+      "mediterranean": 99,
+      "italian": 81
+    },
+    "keto": {
+      "american": 663,
+      "italian": 234,
+      "french": 163
+    },
+    "mediterranean": {
+      "mediterranean": 1274,
+      "italian": 148,
+      "american": 145
+    },
+    "dash": {
+      "american": 639,
+      "world": 234,
+      "mediterranean": 176
+    }
+  },
+  "recipe_counts_by_diet": {
+    "dash": 1745,
+    "keto": 1512,
+    "mediterranean": 1753,
+    "paleo": 1274,
+    "vegan": 1522
+  }
+}
