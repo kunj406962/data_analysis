@@ -12,10 +12,10 @@ print("Dataset shape:", df.shape)
 
 # -------------------------
 # Handle missing values
+# Task 5: Replaced the 3 sepate fillna calls with a single call that fills all macronutrient columns at once using their respective means. This is more efficient and cleaner.
 # -------------------------
-df["Protein(g)"] = df["Protein(g)"].fillna(df["Protein(g)"].mean())
-df["Fat(g)"] = df["Fat(g)"].fillna(df["Fat(g)"].mean())
-df["Carbs(g)"] = df["Carbs(g)"].fillna(df["Carbs(g)"].mean())
+macro_cols = ["Protein(g)", "Carbs(g)", "Fat(g)"]
+df[macro_cols] = df[macro_cols].fillna(df[macro_cols].mean())
 
 print("Missing values handled")
 
@@ -56,35 +56,40 @@ print("Output files saved")
 
 # -------------------------
 # Visualizations
+# Task 5: Changed plt.show() to plt.close() after saving each figure. This allows the script to run in headless environments (like Docker) without issues and prevents blocking execution.
 # -------------------------
 
 # Protein bar chart
 sns.barplot(x=avg_macros.index, y=avg_macros["Protein(g)"])
 plt.title("Average Protein by Diet Type")
 plt.ylabel("Average Protein (g)")
+plt.tight_layout()
 plt.savefig("res/png/protein_chart.png")
-plt.show()
+plt.close()
 
 # Carbs bar chart
 sns.barplot(x=avg_macros.index, y=avg_macros["Carbs(g)"])
 plt.title("Average Carbs by Diet Type")
 plt.ylabel("Average Carbs (g)")
+plt.tight_layout()
 plt.savefig("res/png/carbs_chart.png")
-plt.show()
+plt.close()
 
 # Fat bar chart
 sns.barplot(x=avg_macros.index, y=avg_macros["Fat(g)"])
 plt.title("Average Fat by Diet Type")
 plt.ylabel("Average Fat (g)")
+plt.tight_layout()
 plt.savefig("res/png/fat_chart.png")
-plt.show()
+plt.close()
 
 # Heatmap
 sns.heatmap(avg_macros, annot=True, cmap="YlGnBu")
 plt.title("Macronutrient Content by Diet Type")
 plt.xlabel("Macronutrients")
+plt.tight_layout()
 plt.savefig("res/png/heatmap.png")
-plt.show()
+plt.close()
 
 # Scatter plot
 sns.scatterplot(
@@ -98,7 +103,8 @@ plt.title("Top 5 Protein-Rich Recipes by Diet Type")
 plt.ylabel("Protein (g)")
 plt.xlabel("Recipe Index")
 plt.legend(title="Diet Type")
+plt.tight_layout()
 plt.savefig("res/png/scatter_plot.png")
-plt.show()
+plt.close()
 
 print("Data analysis complete.")
