@@ -2,7 +2,9 @@
 from azure.core.exceptions import ResourceExistsError
 import sys
 
-def upload_csv_to_azurite(csv_path):
+def upload_csv_to_azurite():
+    csv_path = "res/csv/All_Diets.csv"
+    
     connect_str = (
         "DefaultEndpointsProtocol=http;"
         "AccountName=devstoreaccount1;"
@@ -38,5 +40,5 @@ def upload_csv_to_azurite(csv_path):
         sys.exit(1)
 
 if __name__ == "__main__":
-    csv_path = sys.argv[1] if len(sys.argv) > 1 else "All_Diets.csv"
-    upload_csv_to_azurite(csv_path)
+    
+    upload_csv_to_azurite()
