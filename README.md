@@ -8,12 +8,12 @@ A cloud-native data processing application that analyzes dietary datasets, conta
 
 This project processes a dataset of diet recipes (`All_Diets.csv`) to generate nutritional insights, including:
 
-* Average macronutrients per diet type
-* Top 5 protein-rich recipes per diet
-* Macronutrient ratio calculations
-* Data visualizations
-* Containerized execution using Docker
-* Simulated serverless processing using Azure Functions
+- Average macronutrients per diet type
+- Top 5 protein-rich recipes per diet
+- Macronutrient ratio calculations
+- Data visualizations
+- Containerized execution using Docker
+- Simulated serverless processing using Azure Functions
 
 The goal is to demonstrate **cloud-native application development concepts locally** without using live Azure resources.
 
@@ -21,14 +21,14 @@ The goal is to demonstrate **cloud-native application development concepts local
 
 ## Technologies Used
 
-* Python
-* Pandas
-* Matplotlib
-* Seaborn
-* Docker
-* Docker Compose
-* Azure Functions (local runtime)
-* Azurite Blob Storage Emulator
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+- Docker
+- Docker Compose
+- Azure Functions (local runtime)
+- Azurite Blob Storage Emulator
 
 ---
 
@@ -36,17 +36,17 @@ The goal is to demonstrate **cloud-native application development concepts local
 
 The script `data_analysis.py` performs:
 
-* Dataset loading
-* Missing value handling
-* Grouping and aggregation
-* Derived metric calculations
-* Visualization generation
+- Dataset loading
+- Missing value handling
+- Grouping and aggregation
+- Derived metric calculations
+- Visualization generation
 
 Example output files:
 
-* `avg_macros.csv`
-* `top_protein.csv`
-* `nosql_output.json`
+- `avg_macros.csv`
+- `top_protein.csv`
+- `nosql_output.json`
 
 Run locally:
 
@@ -135,11 +135,11 @@ project/
 
 ## Deliverables
 
-* Dockerfile
-* Docker image pushed to Docker Hub
-* Docker Compose deployment simulation
-* Azure Function execution using Azurite
-* Generated data outputs
+- Dockerfile
+- Docker image pushed to Docker Hub
+- Docker Compose deployment simulation
+- Azure Function execution using Azurite
+- Generated data outputs
 
 ---
 
@@ -147,8 +147,8 @@ project/
 
 This project demonstrates:
 
-* Data analysis with Pandas
-* Docker containerization
-* Container registry workflows
-* Serverless computing concepts
-* Local cloud service emulation
+- Data analysis with Pandas
+- Docker containerization
+- Container registry workflows
+- Serverless computing concepts
+- Local cloud service emulation...
